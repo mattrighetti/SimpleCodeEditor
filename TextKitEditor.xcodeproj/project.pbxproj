@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C907279026063A8600CAFAA5 /* TextKitEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907278F26063A8600CAFAA5 /* TextKitEditorApp.swift */; };
-		C907279226063A8600CAFAA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907279126063A8600CAFAA5 /* ContentView.swift */; };
+		C907279226063A8600CAFAA5 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907279126063A8600CAFAA5 /* EditorView.swift */; };
 		C907279426063A8700CAFAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C907279326063A8700CAFAA5 /* Assets.xcassets */; };
 		C907279726063A8700CAFAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C907279626063A8700CAFAA5 /* Preview Assets.xcassets */; };
+		C907279F26063A9600CAFAA5 /* TextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907279E26063A9600CAFAA5 /* TextContainer.swift */; };
+		C90727A12606677200CAFAA5 /* CodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90727A02606677200CAFAA5 /* CodeString.swift */; };
+		C90727A32606679300CAFAA5 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90727A22606679300CAFAA5 /* TextStorage.swift */; };
+		C90727A5260667B600CAFAA5 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90727A4260667B600CAFAA5 /* LayoutManager.swift */; };
+		C90727A826066FB300CAFAA5 /* CodeTypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90727A726066FB300CAFAA5 /* CodeTypeText.swift */; };
+		C90727AB2606A8F100CAFAA5 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = C90727AA2606A8F100CAFAA5 /* sample.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C907278C26063A8600CAFAA5 /* TextKitEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKitEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C907278F26063A8600CAFAA5 /* TextKitEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextKitEditorApp.swift; sourceTree = "<group>"; };
-		C907279126063A8600CAFAA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C907279126063A8600CAFAA5 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		C907279326063A8700CAFAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C907279626063A8700CAFAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C907279826063A8700CAFAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C907279E26063A9600CAFAA5 /* TextContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContainer.swift; sourceTree = "<group>"; };
+		C90727A02606677200CAFAA5 /* CodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeString.swift; sourceTree = "<group>"; };
+		C90727A22606679300CAFAA5 /* TextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStorage.swift; sourceTree = "<group>"; };
+		C90727A4260667B600CAFAA5 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		C90727A726066FB300CAFAA5 /* CodeTypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTypeText.swift; sourceTree = "<group>"; };
+		C90727AA2606A8F100CAFAA5 /* sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,12 @@
 		C907278E26063A8600CAFAA5 /* TextKitEditor */ = {
 			isa = PBXGroup;
 			children = (
+				C90727A92606A8C600CAFAA5 /* Supporting Files */,
 				C907278F26063A8600CAFAA5 /* TextKitEditorApp.swift */,
-				C907279126063A8600CAFAA5 /* ContentView.swift */,
 				C907279326063A8700CAFAA5 /* Assets.xcassets */,
 				C907279826063A8700CAFAA5 /* Info.plist */,
 				C907279526063A8700CAFAA5 /* Preview Content */,
+				C90727A62606680E00CAFAA5 /* Elements */,
 			);
 			path = TextKitEditor;
 			sourceTree = "<group>";
@@ -67,6 +80,27 @@
 				C907279626063A8700CAFAA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C90727A62606680E00CAFAA5 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C907279126063A8600CAFAA5 /* EditorView.swift */,
+				C907279E26063A9600CAFAA5 /* TextContainer.swift */,
+				C90727A02606677200CAFAA5 /* CodeString.swift */,
+				C90727A22606679300CAFAA5 /* TextStorage.swift */,
+				C90727A4260667B600CAFAA5 /* LayoutManager.swift */,
+				C90727A726066FB300CAFAA5 /* CodeTypeText.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		C90727A92606A8C600CAFAA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90727AA2606A8F100CAFAA5 /* sample.txt */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C907279726063A8700CAFAA5 /* Preview Assets.xcassets in Resources */,
+				C90727AB2606A8F100CAFAA5 /* sample.txt in Resources */,
 				C907279426063A8700CAFAA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C907279226063A8600CAFAA5 /* ContentView.swift in Sources */,
+				C90727A32606679300CAFAA5 /* TextStorage.swift in Sources */,
+				C90727A12606677200CAFAA5 /* CodeString.swift in Sources */,
+				C907279226063A8600CAFAA5 /* EditorView.swift in Sources */,
 				C907279026063A8600CAFAA5 /* TextKitEditorApp.swift in Sources */,
+				C90727A5260667B600CAFAA5 /* LayoutManager.swift in Sources */,
+				C907279F26063A9600CAFAA5 /* TextContainer.swift in Sources */,
+				C90727A826066FB300CAFAA5 /* CodeTypeText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
